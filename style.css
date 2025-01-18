@@ -153,17 +153,16 @@ nav .brand .logo {
 }
 .hero-images {
   position: absolute;
-  top: 70%;
-  left: 35%;
-
+  top: 75%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .hero-images img {
-  width: 220%;
+  width: 220px;
   left: 40%;
 
-  height: 400%;
+  height: 400px;
   /* object-fit: cover; */
   /* transform: translateX(-60%); */
   border: 3px solid var(--accent);
@@ -602,13 +601,7 @@ footer {
     width: 100%;
     padding: 0px 20px;
   }
-  /* .hero-images {
-    gap: 14px;
-  }
-  .hero-images img {
-    /* width: 100px; */
-  /* width: 286px;
-  } */
+
 
   .heropage {
     margin-top: 121px;
@@ -624,7 +617,7 @@ footer {
   }
   
   .hero-images img {
-    width: 80%; /* Make the image take 80% of its container's width */
+    width: 100%; /* Make the image take 80% of its container's width */
     max-width: 300px; /* Restrict the maximum width */
     height: auto; /* Maintain the image's aspect ratio */
     border-radius: 12px; /* Slightly rounded edges */
@@ -634,7 +627,7 @@ footer {
     
     /* Centering adjustments */
     position: relative; 
-    left: 10%;/* Allow centering within the container */
+    left: 0%;/* Allow centering within the container */
     transform: translateX(0); /* Reset any unintended horizontal offsets */
   }
   
