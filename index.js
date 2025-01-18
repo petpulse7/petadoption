@@ -176,7 +176,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 
   // Prepare the message for WhatsApp
   const whatsappMessage = `Hello, my name is ${name}. My email is ${email}. I would like to say: ${message}`;
-  const whatsappNumber = "7219106803"; // Replace with your WhatsApp number
+  const whatsappNumber = "8484057836"; // Replace with your WhatsApp number
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   // Open WhatsApp with the message
