@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Use for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link To CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- link To JS -->
+    <script src="index.js" defer></script>
+    <!-- For Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- For Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link For Gsap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Link For Gsap - Scroll Trigger -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Link For Lenis - Smooth Scrolling -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <!-- Link For Split Type -->
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+
+    <title>Pet Adoption</title>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="brand">
+        <img
+          src="img/0b0a9e66-92bd-48b6-80ad-c30505a30b23.jpg"
+          alt="PetPulse Logo"
+          class="logo"
+        />
+        <h1>Pet<b class="accent">Pulse</b></h1>
+      </a>
+      <div class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="index.html#pets">Pets</a>
+        <a href="index.html#requirements">Requirements</a>
+      </div>
+      <button
+        class="btn-2"
+        onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
+      >
+        <p>Contact Us</p>
+        <i class="fa-solid fa-circle-arrow-right"></i>
+      </button>
+      <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
+    </nav>
+
+    <!-- Navbar end -->
+
+    <!-- Hero page section -->
+    <section class="heropage">
+      <div class="hero-headlines">
+        <h1>Find Your Perfect Pet Soul Today!</h1>
+        <p>
+          Discover Your Perfect Companion in Our selection of Loving Pets
+          Available for Adoption.
+        </p>
+      </div>
+
+      <div class="hero-images">
+        <img src="img/download.jpg" />
+      </div>
+    </section>
+    <!-- hero-page section end -->
+
+    <!-- about section -->
+    <section class="requirements" id="requirements">
+      <div class="requirements-headlines">
+        <h1>Our Process For Adoption</h1>
+        <p>Our process is simple and filled with joy every step of the way:</p>
+
+        <div class="r-item-container">
+          <!-- r item 1 -->
+          <div class="r-item">
+            <div class="r-logo" style="background-color: #b9ff46">
+              <i class="fa-regular fa-newspaper"></i>
+            </div>
+            <h5>Submitting an applications</h5>
+          </div>
+
+          <!-- r item 2 -->
+          <div class="r-item">
+            <div class="r-logo" style="background-color: #fff846">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <h5>Attending an online videocall</h5>
+          </div>
+
+          <!-- r item 3 -->
+          <div class="r-item">
+            <div class="r-logo" style="background-color: #ff8846">
+              <i class="fa-solid fa-paw"></i>
+            </div>
+            <h5>Meeting the pet in person</h5>
+          </div>
+
+          <!-- r item 4-->
+          <div class="r-item">
+            <div class="r-logo" style="background-color: #a4b8c2">
+              <i class="fa-regular fa-file-zipper"></i>
+            </div>
+            <h5>Signing an adoption agreement</h5>
+          </div>
+
+          <!-- r item 5-->
+          <div class="r-item">
+            <div class="r-logo" style="background-color: #4fffca">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h5>Congratulations on finding a match!</h5>
+          </div>
+        </div>
+      </div>
+      <img src="img/cat-and-dog-sitting-together-png.webp" />
+    </section>
+
+    <!-- pets section -->
+    <section class="pets" id="pets">
+      <div class="pets-headlines">
+        <i class="fa-solid fa-paw"></i>
+        <h1>Available!</h1>
+      </div>
+
+      <div class="pets-collection">
+        <div class="pet-item">
+          <img src="img/53d5467d-d89f-484d-ad17-d29d0e09b14a.jpg" />
+          <h3>Pomeranian</h3>
+        </div>
+
+        <div class="pet-item">
+          <img src="img/3085251d-2c93-4c21-87fb-a085280afa33.jpg" />
+          <h3>Persian Cat</h3>
+        </div>
+        <div class="pet-item">
+          <img src="img/7513d751-f8cf-4a17-a988-4c13241fd25a.jpg" />
+          <h3>Golden Retriever</h3>
+        </div>
+
+        <div class="pet-item">
+          <img src="img/250ff6e3-6808-44ad-8b47-5455d7520992.jpg" />
+          <h3>Siberian Husky</h3>
+        </div>
+      </div>
+      <!-- <button class="btn-3 btn-pets">
+        <p>Find More</p>
+        <i class="fa-solid fa-arrow-right-long"></i>
+      </button> -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Your Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+    
+        <label for="email">Your Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+    
+        <label for="message">Your Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Enter your message"
+          required
+        ></textarea>
+    
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    
+    <!-- Popup message -->
+    <div id="thankYouPopup" class="popup">
+      <div class="popup-content">
+        <p>Thanks for contacting us!</p>
+        <button id="closePopup">Close</button>
+      </div>
+    </div>
+    
+
+    <!-- footer Section -->
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h1>Pet <b class="accent">Pulse</b></h1>
+          <p>Find your petpulse Pet Soul Today!</p>
+          <div class="socials">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://instagram.com/petpulse0.25" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-contact-info">
+          <div class="contact-info-item">
+            <i class="fa-regular fa-envelope"></i>
+            <a href="mailto:petpulse0.25@gmail.com"
+              ><p>petpulse0.25@gmail.com</p></a
+            >
+          </div>
+
+          <div class="contact-info-item">
+            <i class="fa-solid fa-phone"></i>
+            <p>+91-8484057836</p>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">Designed & Developed by <b>sakshikumbhar237@gmail.com</b> </p>
+    </footer>
+  </body>
+</html>
